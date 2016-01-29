@@ -104,6 +104,10 @@ map <right> :bn<cr>
 map <left> :bp<cr>
 map <up> <Nop>
 map <down> <Nop>
+imap <right> <Nop>
+imap <left> <Nop>
+imap <up> <Nop>
+imap <down> <Nop>
 
 " Remember the last edit location in a file
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
