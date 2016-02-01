@@ -7,6 +7,9 @@ set hidden
 " Enable line numbers
 set number
 
+" Highlight the current line
+set cursorline
+
 " Set character encoding
 set encoding=utf-8
 
@@ -98,6 +101,7 @@ nnoremap <C-H> <C-W><C-H>
 " Syntax highlighting
 let python_highlight_all=1
 syntax on
+set background=dark
 
 " Rebind arrow keys
 map <right> :bn<cr>
@@ -114,3 +118,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 " Using list for tab completion makes it behave like bash
 set wildmode=list
+
+nmap <F8> :TagbarToggle<CR>
+let g:tagbar_foldlevel = 2
+let g:tagbar_autofocus = 1
