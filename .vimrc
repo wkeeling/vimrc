@@ -47,6 +47,12 @@ set undolevels=1000
 " Share the system clipboard
 set clipboard=unnamed
 
+" Turn filetype off for pathogen
+filetype off
+call pathogen#infect()
+call pathogen#helptags()
+filetype on
+
 " filetype plugin indent on
 
 " set the runtime path to include Vundle and initialize
