@@ -17,11 +17,10 @@ set encoding=utf-8
 set pastetoggle=<F10>
 
 " Python related auto-indent stuff
-set ts=4
-set autoindent
+set smarttab
+set tabstop=4
 set expandtab
 set shiftwidth=4
-set showmatch
 
 " Make vertical splits default to the right hand side:
 set spr
@@ -125,6 +124,8 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " Using list for tab completion makes it behave like bash
 set wildmode=list
 
+" TagBar configuration
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_foldlevel = 2
 let g:tagbar_autofocus = 1
+
