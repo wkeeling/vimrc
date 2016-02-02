@@ -16,11 +16,20 @@ set encoding=utf-8
 " Shortcut for disabling autoindent when pasting
 set pastetoggle=<F10>
 
+" File type awareness:
+filetype plugin indent on
+
 " Python related auto-indent stuff
-set smarttab
 set tabstop=4
-set expandtab
 set shiftwidth=4
+set expandtab
+
+" Indenting (prefer cindent to smartindent):
+set cindent
+set autoindent
+
+" Turn off auto wrap
+set nowrap
 
 " Make vertical splits default to the right hand side:
 set spr
@@ -31,13 +40,6 @@ set noswapfile
 
 " Auto-read if file is changed externally:
 set autoread
-
-" File type awareness:
-filetype plugin indent on
-
-" Indenting (prefer cindent to smartindent):
-set cindent
-set autoindent
 
 " Vim command line history (used with: /,:,@):
 set history=1000
@@ -106,7 +108,6 @@ nnoremap <C-H> <C-W><C-H>
 " Syntax highlighting
 let python_highlight_all=1
 syntax on
-set background=dark
 
 " Rebind arrow keys
 map <right> :bn<cr>
