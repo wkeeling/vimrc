@@ -48,6 +48,10 @@ set undolevels=1000
 " Share the system clipboard
 set clipboard=unnamed
 
+" Remap cursor keys when recalling commands from history
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
 " Turn filetype off for pathogen
 filetype off
 call pathogen#infect()
