@@ -127,7 +127,7 @@ imap <down> <Nop>
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " Using list for tab completion makes it behave like bash
-set wildmode=list
+" set wildmode=list
 
 " TagBar configuration
 nmap <F8> :TagbarToggle<CR>
