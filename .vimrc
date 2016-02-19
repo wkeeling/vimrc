@@ -134,3 +134,7 @@ nmap <F8> :TagbarToggle<CR>
 let g:tagbar_foldlevel = 2
 let g:tagbar_autofocus = 1
 
+" Easy expansion of the Active File Directory
+" Press '%%' at the command prompt for auto completion of current buffer
+" directory.
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
