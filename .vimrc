@@ -49,7 +49,7 @@ set history=1000
 set undolevels=1000
 
 " Share the system clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Remap cursor keys when recalling commands from history
 cnoremap <C-p> <Up>
