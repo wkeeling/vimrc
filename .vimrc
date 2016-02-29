@@ -10,6 +10,9 @@ set number
 " Highlight the current line
 set cursorline
 
+" Highlight search matches
+set hlsearch
+
 " Set character encoding
 set encoding=utf-8
 
