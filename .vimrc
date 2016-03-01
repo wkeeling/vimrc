@@ -141,3 +141,8 @@ let g:tagbar_autofocus = 1
 " Press '%%' at the command prompt for auto completion of current buffer
 " directory.
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+" Enable the builtin matchit plugin that enhances the % functionality
+filetype plugin on
+runtime macros/matchit.vim
+
