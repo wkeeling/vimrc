@@ -13,6 +13,9 @@ set cursorline
 " Highlight search matches
 set hlsearch
 
+"Map CTRL-L to mute highlighting of search matches temporarily
+nnoremap <esc> :noh<return><esc>
+
 " Set character encoding
 set encoding=utf-8
 
