@@ -16,6 +16,9 @@ set hlsearch
 "Map CTRL-L to mute highlighting of search matches temporarily
 nnoremap <esc> :noh<return><esc>
 
+" Preview search match as it is being typed
+set incsearch
+
 " Set character encoding
 set encoding=utf-8
 
