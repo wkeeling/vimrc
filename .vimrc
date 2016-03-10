@@ -19,6 +19,10 @@ nnoremap <esc> :noh<return><esc>
 " Preview search match as it is being typed
 set incsearch
 
+" Make & (repeat last substitution) preserve flags
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+
 " Set character encoding
 set encoding=utf-8
 
