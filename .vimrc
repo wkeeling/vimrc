@@ -65,6 +65,12 @@ set clipboard=unnamedplus
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
+" Stop certain movements from always going to first character of the line
+set nostartofline
+
+" Toggle cursor line when in insert mode
+autocmd InsertEnter,InsertLeave * set cul!
+
 " Turn filetype off for pathogen
 filetype off
 call pathogen#infect()
