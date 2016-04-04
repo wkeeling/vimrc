@@ -41,6 +41,9 @@ set expandtab
 set cindent
 set autoindent
 
+" Set right margin indicator
+set cc=79
+
 " Turn off auto wrap
 set nowrap
 
@@ -60,6 +63,9 @@ set undolevels=1000
 
 " Share the system clipboard
 set clipboard=unnamedplus
+
+" close buffer without wrecking split:
+" map <leader>bd :bp\|bd #<CR>
 
 " Remap cursor keys when recalling commands from history
 cnoremap <C-p> <Up>
