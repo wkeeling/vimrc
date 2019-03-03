@@ -27,7 +27,7 @@ xnoremap & :&&<CR>
 set encoding=utf-8
 
 " Shortcut for disabling autoindent when pasting
-set pastetoggle=<F10>
+set pastetoggle=<F9>
 
 " File type awareness:
 filetype plugin indent on
