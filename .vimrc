@@ -42,7 +42,7 @@ set cindent
 set autoindent
 
 " Set right margin indicator
-set cc=79
+" set cc=79
 
 " Turn off auto wrap
 set nowrap
