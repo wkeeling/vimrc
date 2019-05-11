@@ -13,6 +13,12 @@ set cursorline
 " Highlight search matches
 set hlsearch
 
+" Look for .vimrc in current working directory
+set exrc
+
+" Restrict usage of commands in non-default .vimrc
+set secure
+
 "Map backspace to mute highlighting of search matches temporarily
 nnoremap <BS> :noh<return><BS>
 
