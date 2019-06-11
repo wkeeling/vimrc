@@ -131,3 +131,6 @@ runtime macros/matchit.vim
 
 " Add spell checking and automatic wrapping to Git commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" Modify vim's mail editing behaviour
+autocmd FileType mail setlocal wrap spell linebreak fo-=t
